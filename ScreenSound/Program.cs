@@ -13,9 +13,9 @@ List<string> ListaDasBandas = new List<string> { "U2", "The Beatles", "Calypso"}
 */
 
 // Um dicionario armazena uma "Chave" e um valor referente aquela chave.
-Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
-bandasRegistradas.Add("Linkin Park", new List<int> { 10, 9, 8, 7 });
-bandasRegistradas.Add("The Beatles", new List<int>());
+Dictionary<string, Banda> bandasRegistradas = new();
+bandasRegistradas.Add(Ofendedoresv.Nome, Ofendedoresv);
+bandasRegistradas.Add(LenoBrega.Nome, LenoBrega);
 
 
 // "void" usado para criar funções que não retorna valores.
