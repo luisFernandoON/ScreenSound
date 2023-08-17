@@ -1,13 +1,16 @@
 ﻿namespace ScreenSound.Modelos;
-class Album
+internal class Album
 {
     private List<Musica> Musicas = new List<Musica>();
 
-    public Album(string nome)
+    public Album(int ordem, string nome)
     {
+        Ordem = ordem;
         Nome = nome;
     }
+    public int Ordem { get; }
     public string Nome { get;}
+   
     public int DuracaoTotal => Musicas.Sum(m => m.Duracao);
 
     public void AdicionarMusica(Musica musica)
