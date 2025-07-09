@@ -6,14 +6,14 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Banda Ofendedoresv = new(1, "Ofendedoresv");
-        Ofendedoresv.AdicionarNota(new(10));
-        Ofendedoresv.AdicionarNota(new(9));
-        Ofendedoresv.AdicionarNota(new(8));
-        Banda LenoBrega = new(2, "leno Brega");
-        LenoBrega.AdicionarNota(new(10));
-        LenoBrega.AdicionarNota(new(10));
-        LenoBrega.AdicionarNota(new(10));
+        Banda Djavu = new(1, "Djavu");
+        Djavu.AdicionarNota(new(10));
+        Djavu.AdicionarNota(new(9));
+        Djavu.AdicionarNota(new(8));
+        Banda ForroBoys = new(2, "Forro Boys");
+        ForroBoys.AdicionarNota(new(10));
+        ForroBoys.AdicionarNota(new(10));
+        ForroBoys.AdicionarNota(new(10));
 
         /*formato usado nos primordios:
         ---------------------------------------------------------------------------------------
@@ -24,8 +24,8 @@ internal class Program
 
         // Um dicionario armazena uma "Chave" e um valor referente aquela chave.
         Dictionary<string, Banda> bandasRegistradas = new();
-        bandasRegistradas.Add(Ofendedoresv.Nome, Ofendedoresv);
-        bandasRegistradas.Add(LenoBrega.Nome, LenoBrega);
+        bandasRegistradas.Add(Ofendedoresv.Nome, Djavu);
+        bandasRegistradas.Add(LenoBrega.Nome, ForroBoys);
 
         // "void" usado para criar funções que não retorna valores.
         void ExibirLogo()
@@ -100,24 +100,3 @@ internal class Program
     }
 }
 
-
-// Exibição exemplo para usar mais tarde.
-/*
----------------------------------------------------------------------------------
-Episodio ep1 = new(2, "Mini-debate, cartucho de carabina ou GOZAR?", 124);
-ep1.AdicionarConvidados("Bolsonaro");
-ep1.AdicionarConvidados("Lula");
-
-Episodio ep2 = new(1, "Quem Brinca muito um dia vira brinquedo", 42);
-ep2.AdicionarConvidados("Arthor5games");
-ep2.AdicionarConvidados("ParanoidEscape");
-
-
-Podcast podcast = new("PodPinga", "Lois");
-
-podcast.AdicionarEpisodio(ep1);
-podcast.AdicionarEpisodio(ep2);
-
-podcast.ExibirDetalhes();
---------------------------------------------------------------------------------- 
-*/
